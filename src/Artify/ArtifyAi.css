@@ -1,0 +1,96 @@
+/* ArtifyAi.css */
+
+.container{
+    margin-top: 10rem;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.image-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+    min-height: 512px; /* Ensures consistent height for loading spinner and image */
+}
+
+.loader {
+    font-size: 1.5rem;
+    color: #007bff;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.image img {
+    width: 512px;
+    height: 512px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    object-fit: cover;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-box input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-box input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+.search-box .generate {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-box .generate:hover {
+    background-color: #0056b3;
+}
+
+.search-box .generate:active {
+    background-color: #003f8a;
+}
