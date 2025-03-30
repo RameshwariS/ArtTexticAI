@@ -147,7 +147,7 @@
 .input button:hover:not(:disabled) {
     transform: translateY(-1px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.327) 0%, rgba(255, 255, 255, 0.2) 100%);
     border-color: rgba(255, 255, 255, 0.4);
 }
 
